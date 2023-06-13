@@ -9,7 +9,6 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 public class ViewModal extends AndroidViewModel {
-
     // creating a new variable for course repository.
     private CourseRepository repository;
 
@@ -30,19 +29,19 @@ public class ViewModal extends AndroidViewModel {
     }
 
     // below line is to update data in our repository.
-//    public void update(CourseModal model) {
-//        repository.update(model);
-//    }
-//
-//    // below line is to delete the data in our repository.
-//    public void delete(CourseModal model) {
-//        repository.delete(model);
-//    }
-//
-//    // below method is to delete all the courses in our list.
-//    public void deleteAllCourses() {
-//        repository.deleteAllCourses();
-//    }
+    public void update(CourseModal model) {
+        repository.update(model);
+    }
+
+    // below line is to delete the data in our repository.
+    public void delete(CourseModal model) {
+        repository.delete(model);
+    }
+
+    // below method is to delete all the courses in our list.
+    public void deleteAllCourses() {
+        repository.deleteAllCourses();
+    }
 
     // below method is to get all the courses in our list.
     public LiveData<List<CourseModal>> getAllCourses() {
